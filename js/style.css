@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+
+body{
+    font-family: 'Changa One', cursive;
+    background-color:chocolate;
+}
+
+.Atack{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#SelecMascota{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+#SelecAtack{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.rati{
+    width: 220px;
+    height: 150px;
+    background: #0677e0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    color: white;
+}
+    .rati img {
+        width: 120px;
+}
+.mascota{
+    width: 300px;
+    height: 50px;
+    background: #18ca21;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(7, 14, 110);  
+}
+.hh1{
+    width: 255px;
+    height: 60px;
+    background: #beca18;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(236, 236, 236);  
+}
+.tarjeta{
+    display:flex;
+    gap:18px;
+
+
+}

@@ -14,9 +14,6 @@ let Vida_Enemigo =3
 
 function IniciarJuego() {
 
-    let SecSelcATK = document.getElementById ('SelecAtack')
-    SecSelcATK.style.display ='none'
-
     let SelecMascota = document.getElementById('BotonSelec')
     SelecMascota.addEventListener('click', SelecMascotaJugador)
 
@@ -33,9 +30,6 @@ function IniciarJuego() {
     SelecMascotaJugador ()
 }           
 function SelecMascotaJugador (){
-
-    let SecSelcATK = document.getElementById ('SelecAtack')
-    SecSelcATK.style.display = 'block'
 
     let inputRATIHUELLA = document.getElementById('RATIHUELLA')
     let inputHIPODOGE = document.getElementById('HIPODOGE')

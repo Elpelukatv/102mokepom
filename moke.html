@@ -3,29 +3,40 @@
     <meta charset="utf -8"/>
     <title> MOKEPOM 💦🟩🟦🟥🟫</title>
     <script src="./js/logica.js"> </script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./js/style.css">
 </head>
 
 <body>
 <section id="SelecMascota">
-    <H1 class="title" id="hh1">     🔰🔰 MOKEPOM 🔰🔰 </H1>
-    <H2> ELIJE TU MASCOTA </H2>
+    <H1 class="hh1" id="title">     🔰🔰 MOKEPOM 🔰🔰 </H1>
+    <H2 class="mascota" class="mascota"> ELIJE TU MASCOTA </H2>
     
-    <p>
-    <label for="RATIHUELLA"> RATIHUELLA</label>
-    <input type="radio" name="mascota" id="RATIHUELLA"/>
+    <div class="tarjeta">
+        <label for="RATIHUELLA" class="rati"> 
+            <p> RATIHUELLA </p>
+            <img src="./assets/mokepons_mokepon_ratigueya_attack.png" alt="RATIHUELLA">
+        </label>
+        <input type="radio" name="mascota" id="RATIHUELLA"/>
 
-    <label for="HIPODOGE"> HIPODOGE </label>
-    <input type="radio" name="mascota" id="HIPODOGE"/>
+        <label for="HIPODOGE"   class="rati"> HIPODOGE 
+            <p>  </p>
+            <img src="./assets/mokepons_mokepon_hipodoge_attack.png" alt="HIPODOGE">
+        </label>
+        <input type="radio" name="mascota" id="HIPODOGE"/>
 
-    <label for="CAPIPEPO"> CAPIPEPO </label>
-    <input type="radio" name="mascota" id="CAPIPEPO"/> </p>
+        <label for="CAPIPEPO"   class="rati"> CAPIPEPO 
+            <p>  </p>
+            <img src="./assets/mokepons_mokepon_capipepo_attack.png" alt="CAPIPEPO">
+        </label>
+        <input type="radio" name="mascota" id="CAPIPEPO"/> 
+    </div>
 
-    <p> <button id="BotonSelec"> SELECCIONAR </button>\</p>  
+    <p> 
+        <button id="BotonSelec"> SELECCIONAR </button>\</p>  
 </section>
 
-<section id="SelecAtack">
-    <H2> ELIJE TU ATAQUE </H2>
+<section id="SelecAtack" >
+    <H2 class="Atack"> ELIJE TU ATAQUE </H2>
     <p> tu mascota <span id="MascotaJugador"> </span> 
         tiene <span id="VidaJugador"> 3 </span> vidas </p>
     <p> la mascota del enemigo es <span id="MascotaEnemigo"> </span>
