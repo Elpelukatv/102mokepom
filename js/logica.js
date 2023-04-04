@@ -3,16 +3,22 @@ let AtackEnemigo
 let Vida_Jugador =3
 let Vida_Enemigo =3
 
-    // SecSelcMAS       1ER seccion del HTML //
-    // SecSelcATK       2DA seccion del HTML //
-    // SecSelcSMS       3RA seccion del HTML //
-    // SecSelcReinicio  4TA seccion del HTML //
+    // windows1       1ER seccion del HTML //
+    // windows2       2DA seccion del HTML //
+    // windows3       3RA seccion del HTML //
+    // windows4       4TA seccion del HTML //
 
     // AF funcion ataque fuego //
     // AA  funcion ataque agua //
     // AT  funcion ataque tierra //
 
 function IniciarJuego() {
+
+    let windows2 = document.getElementById('SelecAtack')
+    windows2.style.display = 'none'
+
+    let windows3 = document.getElementById('Jugarotravez')
+    windows3.style.display = 'none'
 
     let SelecMascota = document.getElementById('BotonSelec')
     SelecMascota.addEventListener('click', SelecMascotaJugador)
@@ -31,6 +37,12 @@ function IniciarJuego() {
 }           
 function SelecMascotaJugador (){
 
+    let windows1 = document.getElementById('SelecMascota')
+    windows1.style.display = 'none'
+    
+    let windows2 = document.getElementById('SelecAtack')
+    windows2.style.display = 'block'
+    
     let inputRATIHUELLA = document.getElementById('RATIHUELLA')
     let inputHIPODOGE = document.getElementById('HIPODOGE')
     let inputCAPIPEPO = document.getElementById('CAPIPEPO')
@@ -42,9 +54,7 @@ function SelecMascotaJugador (){
         spannMascotaJugador.innerHTML = 'hipodoge'
     else if (inputCAPIPEPO.checked)
         spannMascotaJugador.innerHTML = 'CAPIPEPO'
-    else {
-        alert ('selecciona una mascota')
-    } 
+   
     SelecMascotaEnemigo ()
 }        
 function SelecMascotaEnemigo () {
@@ -143,6 +153,9 @@ function smsEnd(resultadoFinal){
     BTAgua.disabled = true
     let BTTierra = document.getElementById('BTTierra')
     BTTierra.disabled = true
+
+    let windows3 = document.getElementById('Jugarotravez')
+    windows3.style.display = 'block'
 
 }
 
