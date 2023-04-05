@@ -13,7 +13,6 @@ let Vida_Enemigo =3
     // AT  funcion ataque tierra //
 
 function IniciarJuego() {
-
     let windows2 = document.getElementById('SelecAtack')
     windows2.style.display = 'none'
 
@@ -33,7 +32,6 @@ function IniciarJuego() {
     let reinicio = document.getElementById('again')
     reinicio.addEventListener('click',reiniciar)
 
-    SelecMascotaJugador ()
 }           
 function SelecMascotaJugador (){
 

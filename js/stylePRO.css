@@ -1,84 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
 
-body{
-    font-family: 'Changa One', cursive;
+    body{
+    font-family: 'changa one', cursive;
     background-color:rgb(195, 223, 96);
-}
+    }
+    #SelecMascota{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
 
-.Atack{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-#SelecMascota{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    .h1.h2{
     align-items: center;
-}
-#SelecAtack{
+    width: 255px;
+    height: 60px;
+    background: #18ca77;   
+    }
+
+    .tarjeta{
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-.rati{
+    justify-content: center;
+    gap:18px;
+
+    }
+    .rati{
     width: 220px;
     height: 150px;
     background: #0677e0;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: top;
     color: white;
-}
+    }
     .rati img {
         width: 120px;
-}
-.mascota{
-    width: 300px;
-    height: 50px;
-    background: #18ca21;
-    padding: 5px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(7, 14, 110);  
-}
-.hh1{
-    width: 255px;
-    height: 60px;
-    background: #beca18;
-    padding: 5px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(236, 236, 236);  
-}
-
-.Botoncito{
+    }
+    .Botoncito{
     width: 230px;
-    height: 60;
+    height: 70px;
+    display: flex;
+    justify-content:center;
     padding: 5px;
     border-radius: 20px;
     align-items: center;
     background: #eaebe2;
     box-sizing: border-box;
     color:rgb(37, 51, 245);
-    display: flex;
-    justify-content: center; 
-}
-
-
-.tarjeta{
-    display:flex;
-    gap:18px;
-
-}
+    }
+    
+    #SelecAtack{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;   
+    }
+   
