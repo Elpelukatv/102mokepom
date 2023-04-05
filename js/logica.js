@@ -39,7 +39,7 @@ function SelecMascotaJugador (){
     windows1.style.display = 'none'
     
     let windows2 = document.getElementById('SelecAtack')
-    windows2.style.display = 'block'
+    windows2.style.display = 'flex'
     
     let inputRATIHUELLA = document.getElementById('RATIHUELLA')
     let inputHIPODOGE = document.getElementById('HIPODOGE')
