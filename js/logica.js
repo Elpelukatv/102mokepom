@@ -19,6 +19,10 @@ function IniciarJuego() {
     let windows3 = document.getElementById('Jugarotravez')
     windows3.style.display = 'none'
 
+    let windows4 = document.getElementById('vidas')
+    windows4.style.display = 'none'
+
+
     let SelecMascota = document.getElementById('BotonSelec')
     SelecMascota.addEventListener('click', SelecMascotaJugador)
 
@@ -40,6 +44,9 @@ function SelecMascotaJugador (){
     
     let windows2 = document.getElementById('SelecAtack')
     windows2.style.display = 'flex'
+
+    let windows4 = document.getElementById('vidas')
+    windows4.style.display = 'flex'
     
     let inputRATIHUELLA = document.getElementById('RATIHUELLA')
     let inputHIPODOGE = document.getElementById('HIPODOGE')

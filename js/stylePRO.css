@@ -40,27 +40,42 @@
         width: 120px;
     }
     .Botoncito{
-    width: 230px;
-    height: 70px;
-    display: flex;
-    justify-content:center;
-    padding: 5px;
-    border-radius: 20px;
-    align-items: center;
-    background: #eaebe2;
-    box-sizing: border-box;
-    color:rgb(37, 51, 245);
+        width: 230px;
+        height: 70px;
+        display: flex;
+        justify-content:center;
+        padding: 5px;
+        border-radius: 20px;
+        align-items: center;
+        background: #eaebe2;
+        box-sizing: border-box;
+        color:rgb(37, 51, 245);
     }
     
     #SelecAtack{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;   
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;   
     }
+
+    .BotonAtaque{
+     background-color: rgb(214, 37, 14);
+     padding: 20px;
+     border-radius: 47px;
+     width: 142px;
+     height: 69px;   
+    }
+
    #sms{
         display:flex;
-        flex-direction:column;
         justify-content:center;
         align-items:center;   
+   }
+   
+   .life{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
    }
