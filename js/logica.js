@@ -136,12 +136,20 @@ function revisarvidas(){
     reinicio()
 }
 
-function createsms(resultado){
-    let getsms = document.getElementById ('sms') 
-    let parrafo = document.createElement('p') 
-    parrafo.innerHTML = ' TU MASCOTA ATACO CON  ' + AtackJugador + ' , LA MASCORA DEL ENEMIGO ATACO CON  ' + AtackEnemigo + ' = ' + resultado
-                        
-    getsms.appendChild(parrafo)
+function createsms(Sms_Resul){
+    let getsms = document.getElementById ('Sms_Resul') 
+    let Sms_Atk_Jug = document.getElementById ('Sms_Atk_Jug')
+    let Sms_Atk_Ene = document.getElementById ('Sms_Atk_Ene')
+
+    let New_Atk_Jug = document.createElement('p')
+    let New_Atk_Ene = document.createElement('p')
+
+    getsms.innerHTML = Sms_Resul
+    New_Atk_Jug.innerHTML = AtackJugador
+    New_Atk_Ene.innerHTML = AtackEnemigo
+                       
+    Sms_Atk_Jug.appendChild(New_Atk_Jug)
+    Sms_Atk_Ene.appendChild(New_Atk_Ene)
 
 }
 
