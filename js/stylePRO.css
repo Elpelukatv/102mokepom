@@ -68,18 +68,26 @@
      color: aliceblue; 
     }
 
-    #sms{
+    .sms{
     display: flex;
     flex-direction:column;
-    align-items: column;
+    justify-content: center;
+    align-items: center;
     }
 
-   #Sms_Resul{
+   #life{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;  
+   }
+
+   .pp{
     width: 200px;
     background: azure;
     padding: 5px;
     margin-top: 20px;
-    border-radius: 118px;   
+    border-radius: 118px; 
    }
    
    
