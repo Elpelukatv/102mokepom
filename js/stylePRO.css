@@ -43,7 +43,6 @@
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    align-items: top;
     color: white;
     }
     .rati img {
@@ -112,6 +111,12 @@
     background: #1ac9e0;
     box-sizing: border-box;
     color:rgb(37, 51, 245);
+   }
+
+   .final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
 
    @media (max-width:480px) {

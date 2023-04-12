@@ -1,3 +1,24 @@
+
+let windows2 = document.getElementById('SelecAtack')
+let windows3 = document.getElementById('Jugarotravez')
+let windows5 = document.getElementById('vidasx2')
+let SelecMascota = document.getElementById('BotonSelec')
+let BTFuego = document.getElementById('BTFuego')
+let BTAgua = document.getElementById('BTAgua')
+let BTTierra = document.getElementById('BTTierra')
+let reinicio = document.getElementById('again')
+let windows1 = document.getElementById('SelecMascota')
+let inputRATIHUELLA = document.getElementById('RATIHUELLA')
+let inputHIPODOGE = document.getElementById('HIPODOGE')
+let inputCAPIPEPO = document.getElementById('CAPIPEPO')
+let spannMascotaJugador = document.getElementById('MascotaJugador')
+let spannMascotaEnemigo = document.getElementById('MascotaEnemigo')
+let SpanVidasJugador = document.getElementById('VidaJugador')
+let SpanVidasEnemigo = document.getElementById('VidaEnemigo')
+let Sms_Atk_Jug = document.getElementById ('Sms_Atk_Jug')
+let Sms_Atk_Ene = document.getElementById ('Sms_Atk_Ene')
+let getsms = document.getElementById ('sms')
+
 let AtackJugador 
 let AtackEnemigo
 let Vida_Jugador =3
@@ -13,45 +34,21 @@ let Vida_Enemigo =3
     // AT  funcion ataque tierra //
 
 function IniciarJuego() {
-    let windows2 = document.getElementById('SelecAtack')
+    
     windows2.style.display = 'none'
-
-    let windows3 = document.getElementById('Jugarotravez')
     windows3.style.display = 'none'
-
-    let windows5 = document.getElementById('vidasx2')
     windows5.style.display = 'none'
-
-    let SelecMascota = document.getElementById('BotonSelec')
     SelecMascota.addEventListener('click', SelecMascotaJugador)
-
-    let BTFuego = document.getElementById('BTFuego')
     BTFuego.addEventListener('click', AF)
-    let BTAgua = document.getElementById('BTAgua')
     BTAgua.addEventListener('click', AA)
-    let BTTierra = document.getElementById('BTTierra')
     BTTierra.addEventListener('click', AT)
-
-    let reinicio = document.getElementById('again')
     reinicio.addEventListener('click',reiniciar)
-
 }           
 function SelecMascotaJugador (){
-
-    let windows1 = document.getElementById('SelecMascota')
     windows1.style.display = 'none'
-    
-    let windows2 = document.getElementById('SelecAtack')
     windows2.style.display = 'flex'
-
-    let windows5 = document.getElementById('vidasx2')
     windows5.style.display = 'grid'
-
-    let inputRATIHUELLA = document.getElementById('RATIHUELLA')
-    let inputHIPODOGE = document.getElementById('HIPODOGE')
-    let inputCAPIPEPO = document.getElementById('CAPIPEPO')
-    let spannMascotaJugador = document.getElementById('MascotaJugador')
-            
+        
     if (inputRATIHUELLA.checked)
         spannMascotaJugador.innerHTML = 'RATIHUELLA' 
     else if (inputHIPODOGE.checked)
@@ -63,7 +60,6 @@ function SelecMascotaJugador (){
 }        
 function SelecMascotaEnemigo () {
     let AtackRandom = aleatorio(1,3)
-    let spannMascotaEnemigo = document.getElementById('MascotaEnemigo')
 
     if (AtackRandom == 1) {
         spannMascotaEnemigo.innerHTML = 'RATIHUELLA'
@@ -100,8 +96,7 @@ function AtackEnemigoRandom () {
 }
 
 function combate (){
-    let SpanVidasJugador = document.getElementById('VidaJugador')
-    let SpanVidasEnemigo = document.getElementById('VidaEnemigo')
+    
 
     if (AtackEnemigo == AtackJugador) {
         createsms("empate")
@@ -136,13 +131,10 @@ function revisarvidas(){
 }
 
 function createsms(Sms_Resul){
-    let getsms = document.getElementById ('Sms_Resul') 
-    let Sms_Atk_Jug = document.getElementById ('Sms_Atk_Jug')
-    let Sms_Atk_Ene = document.getElementById ('Sms_Atk_Ene')
+    
 
-    let New_Atk_Jug = document.createElement('p')
     let New_Atk_Ene = document.createElement('p')
-
+    let New_Atk_Jug = document.createElement('p')
     getsms.innerHTML = Sms_Resul
     New_Atk_Jug.innerHTML = AtackJugador
     New_Atk_Ene.innerHTML = AtackEnemigo
@@ -153,21 +145,21 @@ function createsms(Sms_Resul){
 }
 
 function smsEnd(resultadoFinal){
-    let getsms = document.getElementById ('sms') 
+    
     let parrafo = document.createElement('p') 
     parrafo.innerHTML = resultadoFinal
                         
     getsms.appendChild(parrafo)
 
-    let BTFuego = document.getElementById('BTFuego')
+    
     BTFuego.disabled = true
-    let BTAgua = document.getElementById('BTAgua')
+    
     BTAgua.disabled = true
-    let BTTierra = document.getElementById('BTTierra')
+    
     BTTierra.disabled = true
 
     let windows3 = document.getElementById('Jugarotravez')
-    windows3.style.display = 'block'
+    windows3.style.display = 'flex'
 
 }
 
@@ -180,3 +172,4 @@ function aleatorio(min, max) {
 }
               
 window.addEventListener('load',IniciarJuego)
+
