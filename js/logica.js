@@ -1,28 +1,44 @@
+const windows1 = document.getElementById('SelecMascota')
+const windows2 = document.getElementById('SelecAtack')
+const windows3 = document.getElementById('Jugarotravez')
+const windows5 = document.getElementById('vidasx2')
+const SelecMascota = document.getElementById('BotonSelec')
+const BTFuego = document.getElementById('BTFuego')
+const BTAgua = document.getElementById('BTAgua')
+const BTTierra = document.getElementById('BTTierra')
+const reinicio = document.getElementById('again')
 
-let windows2 = document.getElementById('SelecAtack')
-let windows3 = document.getElementById('Jugarotravez')
-let windows5 = document.getElementById('vidasx2')
-let SelecMascota = document.getElementById('BotonSelec')
-let BTFuego = document.getElementById('BTFuego')
-let BTAgua = document.getElementById('BTAgua')
-let BTTierra = document.getElementById('BTTierra')
-let reinicio = document.getElementById('again')
-let windows1 = document.getElementById('SelecMascota')
-let inputRATIHUELLA = document.getElementById('RATIHUELLA')
-let inputHIPODOGE = document.getElementById('HIPODOGE')
-let inputCAPIPEPO = document.getElementById('CAPIPEPO')
-let spannMascotaJugador = document.getElementById('MascotaJugador')
-let spannMascotaEnemigo = document.getElementById('MascotaEnemigo')
-let SpanVidasJugador = document.getElementById('VidaJugador')
-let SpanVidasEnemigo = document.getElementById('VidaEnemigo')
-let Sms_Atk_Jug = document.getElementById ('Sms_Atk_Jug')
-let Sms_Atk_Ene = document.getElementById ('Sms_Atk_Ene')
-let getsms = document.getElementById ('sms')
+const inputRATIHUELLA = document.getElementById('RATIHUELLA')
+const inputHIPODOGE = document.getElementById('HIPODOGE')
+const inputCAPIPEPO = document.getElementById('CAPIPEPO')
+const spannMascotaJugador = document.getElementById('MascotaJugador')
+const spannMascotaEnemigo = document.getElementById('MascotaEnemigo')
+const SpanVidasJugador = document.getElementById('VidaJugador')
+const SpanVidasEnemigo = document.getElementById('VidaEnemigo')
+const Sms_Atk_Jug = document.getElementById ('Sms_Atk_Jug')
+const Sms_Atk_Ene = document.getElementById ('Sms_Atk_Ene')
+const getsms = document.getElementById ('sms')
 
 let AtackJugador 
 let AtackEnemigo
 let Vida_Jugador =3
 let Vida_Enemigo =3
+
+class Mokepom {
+    constructor(nombre, foto, vida, ) {
+        this.nombre = nombre
+        this.foto = foto
+        this.vida = vida
+    }
+}
+
+let RATIHUELLA = new Mokepom('RATIHUELLA' , '/assets/mokepons_mokepon_ratigueya_attack.png' , '5')
+
+let HIPODOGE = new Mokepom('HIPODOGE' , './assets/mokepons_mokepon_hipodoge_attack.png' , '5')
+
+let CAPIPEPO = new Mokepom('CAPIPEPO' , '/assets/mokepons_mokepon_capipepo_attack.png' , '5')
+
+console.log(RATIHUELLA)
 
     // windows1       1ER seccion del HTML //
     // windows2       2DA seccion del HTML //
