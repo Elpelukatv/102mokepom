@@ -21,7 +21,7 @@
     .tarjeta{
     display:flex;
     justify-content: center;
-    gap:18px;
+    gap:30px;
     }
 
     input {
@@ -35,15 +35,19 @@
     } 
 
     .rati{
-    width: 220px;
-    height: 150px;
-    background: #0677e0;
-    padding: 5px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    color: white;
+        width: 140px;
+        height: 189px;
+        gap: 1px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #0677e0;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 104px;
+        display: flex;
+        justify-content: center;
+        color: white;
     }
     .rati img {
         width: 120px;

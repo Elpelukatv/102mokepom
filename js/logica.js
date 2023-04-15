@@ -8,9 +8,6 @@ const BTAgua = document.getElementById('BTAgua')
 const BTTierra = document.getElementById('BTTierra')
 const reinicio = document.getElementById('again')
 
-const inputRATIHUELLA = document.getElementById('RATIHUELLA')
-const inputHIPODOGE = document.getElementById('HIPODOGE')
-const inputCAPIPEPO = document.getElementById('CAPIPEPO')
 const spannMascotaJugador = document.getElementById('MascotaJugador')
 const spannMascotaEnemigo = document.getElementById('MascotaEnemigo')
 const SpanVidasJugador = document.getElementById('VidaJugador')
@@ -18,10 +15,15 @@ const SpanVidasEnemigo = document.getElementById('VidaEnemigo')
 const Sms_Atk_Jug = document.getElementById ('Sms_Atk_Jug')
 const Sms_Atk_Ene = document.getElementById ('Sms_Atk_Ene')
 const getsms = document.getElementById ('sms')
+const ContenedorTarjetas = document.getElementById ('ContenedorTarjetas')
 
 let mokepones = []
 let AtackJugador 
 let AtackEnemigo
+let OpcionesMokepones
+let inputRATIHUELLA
+let inputHIPODOGE
+let inputCAPIPEPO
 let Vida_Jugador =3
 let Vida_Enemigo =3
 
@@ -76,8 +78,22 @@ CAPIPEPO.ataque.push(
     // AA  funcion ataque agua //
     // AT  funcion ataque tierra //
 
-function IniciarJuego(RATIHUELLA) {
+function IniciarJuego() {
     
+    mokepones.forEach((Mokepom) => {
+    OpcionesMokepones =`
+    <input type="radio" name="mascota" id=${Mokepom.nombre} />    
+        <label  class="rati" for=${Mokepom.nombre} >
+        <p>${Mokepom.nombre} </p> 
+        <img src=${Mokepom.foto}  alt=${Mokepom.nombre} >
+        </label>
+     `
+    ContenedorTarjetas.innerHTML += OpcionesMokepones
+        inputRATIHUELLA = document.getElementById('Ratiguella')
+        inputHIPODOGE = document.getElementById('Hipodoge')
+        inputCAPIPEPO = document.getElementById('Capipepo')
+})
+
     windows2.style.display = 'none'
     windows3.style.display = 'none'
     windows5.style.display = 'none'
