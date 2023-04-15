@@ -19,6 +19,7 @@ const Sms_Atk_Jug = document.getElementById ('Sms_Atk_Jug')
 const Sms_Atk_Ene = document.getElementById ('Sms_Atk_Ene')
 const getsms = document.getElementById ('sms')
 
+let mokepones = []
 let AtackJugador 
 let AtackEnemigo
 let Vida_Jugador =3
@@ -29,16 +30,42 @@ class Mokepom {
         this.nombre = nombre
         this.foto = foto
         this.vida = vida
+        this.ataque = []
     }
 }
 
-let RATIHUELLA = new Mokepom('RATIHUELLA' , '/assets/mokepons_mokepon_ratigueya_attack.png' , '5')
+let RATIHUELLA = new Mokepom('RATIHUELLA' , '/assets/rati.png' , '5')
 
-let HIPODOGE = new Mokepom('HIPODOGE' , './assets/mokepons_mokepon_hipodoge_attack.png' , '5')
+let HIPODOGE = new Mokepom('HIPODOGE' , './assets/hipo.png' , '5')
 
-let CAPIPEPO = new Mokepom('CAPIPEPO' , '/assets/mokepons_mokepon_capipepo_attack.png' , '5')
+let CAPIPEPO = new Mokepom('CAPIPEPO' , '/assets/capi.png' , '5')
 
-console.log(RATIHUELLA)
+mokepones.push(RATIHUELLA,HIPODOGE,CAPIPEPO)
+
+RATIHUELLA.ataque.push(
+    { NOMBRE: '🌊' ,id:'BTAgua' },
+    { NOMBRE: '🔥' ,id:'BTFuego' },
+    { NOMBRE: '🔥' ,id:'BTFuego' },
+    { NOMBRE: '🔥' ,id:'BTFuego' },
+    { NOMBRE: '🌎' ,id:'BTTierra' },
+)
+
+HIPODOGE.ataque.push(
+    { NOMBRE: '🌊' ,id:'BTAgua' },
+    { NOMBRE: '🌊' ,id:'BTAgua' },
+    { NOMBRE: '🌊' ,id:'BTAgua' },
+    { NOMBRE: '🔥' ,id:'BTFuego' },
+    { NOMBRE: '🌎' ,id:'BTTierra' },
+)
+
+CAPIPEPO.ataque.push(
+    { NOMBRE: '🌎' ,id:'BTTierra' },
+    { NOMBRE: '🌎' ,id:'BTTierra' },
+    { NOMBRE: '🌊' ,id:'BTAgua' },
+    { NOMBRE: '🔥' ,id:'BTFuego' },
+    { NOMBRE: '🌎' ,id:'BTTierra' },
+)
+
 
     // windows1       1ER seccion del HTML //
     // windows2       2DA seccion del HTML //
@@ -49,7 +76,7 @@ console.log(RATIHUELLA)
     // AA  funcion ataque agua //
     // AT  funcion ataque tierra //
 
-function IniciarJuego() {
+function IniciarJuego(RATIHUELLA) {
     
     windows2.style.display = 'none'
     windows3.style.display = 'none'
