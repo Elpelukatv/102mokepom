@@ -109,24 +109,17 @@ function SelecMascotaJugador (){
     windows5.style.display = 'grid'
         
     if (inputRATIHUELLA.checked)
-        spannMascotaJugador.innerHTML = 'RATIHUELLA' 
+        spannMascotaJugador.innerHTML = inputRATIHUELLA.id 
     else if (inputHIPODOGE.checked)
-        spannMascotaJugador.innerHTML = 'hipodoge'
+        spannMascotaJugador.innerHTML = inputHIPODOGE.id
     else if (inputCAPIPEPO.checked)
-        spannMascotaJugador.innerHTML = 'CAPIPEPO'
+        spannMascotaJugador.innerHTML = inputCAPIPEPO.id
    
     SelecMascotaEnemigo ()
 }        
 function SelecMascotaEnemigo () {
-    let AtackRandom = aleatorio(1,3)
-
-    if (AtackRandom == 1) {
-        spannMascotaEnemigo.innerHTML = 'RATIHUELLA'
-    } else if (AtackRandom == 2) {
-        spannMascotaEnemigo.innerHTML = 'HIPODOGE'
-    } else if (AtackRandom == 3) {
-        spannMascotaEnemigo.innerHTML = 'CAPIPEPO'
-    }    
+    let AtackRandom = aleatorio(0,mokepones,length -1)
+    spannMascotaEnemigo.innerHTML = mokepones [AtackRandom].nombre
 }           
 function AF (){
     AtackJugador = 'FUEGO' 
