@@ -89,9 +89,9 @@ function IniciarJuego() {
         </label>
      `
     ContenedorTarjetas.innerHTML += OpcionesMokepones
-        inputRATIHUELLA = document.getElementById('Ratiguella')
-        inputHIPODOGE = document.getElementById('Hipodoge')
-        inputCAPIPEPO = document.getElementById('Capipepo')
+        inputRATIHUELLA = document.getElementById('RATIHUELLA')
+        inputHIPODOGE = document.getElementById('HIPODOGE')
+        inputCAPIPEPO = document.getElementById('CAPIPEPO')
 })
 
     windows2.style.display = 'none'
@@ -147,7 +147,7 @@ function AtackEnemigoRandom () {
         AtackEnemigo =  'FUEGO'
     }else if(AtackRandom2 == 2) {
         AtackEnemigo =  'AGUA'     
-    } else if(AtackEnemigo2 ==3){
+    }else if(AtackRandom2 ==3){
         AtackEnemigo ='TIERRA'
     }
     combate ()
