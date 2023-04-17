@@ -16,6 +16,7 @@ const Sms_Atk_Jug = document.getElementById ('Sms_Atk_Jug')
 const Sms_Atk_Ene = document.getElementById ('Sms_Atk_Ene')
 const getsms = document.getElementById ('sms')
 const ContenedorTarjetas = document.getElementById ('ContenedorTarjetas')
+const boton = document.getElementById ('boton')
 
 let mokepones = []
 let AtackJugador 
@@ -24,6 +25,8 @@ let OpcionesMokepones
 let inputRATIHUELLA
 let inputHIPODOGE
 let inputCAPIPEPO
+let MascotaJugadorx2
+let AtaqueEnemigox2
 let Vida_Jugador =3
 let Vida_Enemigo =3
 
@@ -108,15 +111,40 @@ function SelecMascotaJugador (){
     windows2.style.display = 'flex'
     windows5.style.display = 'grid'
         
-    if (inputRATIHUELLA.checked)
-        spannMascotaJugador.innerHTML = inputRATIHUELLA.id 
-    else if (inputHIPODOGE.checked)
+    if (inputRATIHUELLA.checked) {
+        spannMascotaJugador.innerHTML = inputRATIHUELLA.id
+        MascotaJugadorx2= inputRATIHUELLA.id 
+    } else if (inputHIPODOGE.checked){
         spannMascotaJugador.innerHTML = inputHIPODOGE.id
-    else if (inputCAPIPEPO.checked)
+        MascotaJugadorx2 = inputHIPODOGE.id
+    } else if (inputCAPIPEPO.checked) {
         spannMascotaJugador.innerHTML = inputCAPIPEPO.id
-   
+        MascotaJugadorx2 = inputCAPIPEPO.id
+    } else {
+        alert('seleccione una mascota')
+    }
+
+    ExtraerAtaques(MascotaJugadorx2)
     SelecMascotaEnemigo ()
-}        
+}  
+function ExtraerAtaques (MascotaJugadorx2) {
+    let ataques 
+    for (let i = 0; i < mokepones.length; i++) {
+        if(MascotaJugadorx2 === mokepones[i].nombre) {
+            ataques = mokepones[i].ataques 
+        }   
+    }
+    MostrarAtaques()
+}
+
+function MostrarAtaques() {
+    ataques.forEach((ataque)) 
+if (ataque.id === 'BTAgua') {
+        }
+    } 
+      
+
+
 function SelecMascotaEnemigo () {
     let AtackRandom = aleatorio(0,mokepones,length -1)
     spannMascotaEnemigo.innerHTML = mokepones [AtackRandom].nombre
