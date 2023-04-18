@@ -134,16 +134,16 @@ function ExtraerAtaques (MascotaJugadorx2) {
             ataques = mokepones[i].ataques 
         }   
     }
-    MostrarAtaques()
+    MostrarAtaques(ataques)
 }
 
-function MostrarAtaques() {
-    ataques.forEach((ataque)) 
-if (ataque.id === 'BTAgua') {
-        }
-    } 
-      
+function MostrarAtaques(ataques) {
+    ataques.forEach((ataques) => {
+    MascotaJugadorx2 ='<button id=${ataque.id} class="BotonAtaque" >${ataque.nombre} 🔥 </button>'
 
+    boton.innerHTML += MascotaJugadorx2
+    })
+    } 
 
 function SelecMascotaEnemigo () {
     let AtackRandom = aleatorio(0,mokepones,length -1)
